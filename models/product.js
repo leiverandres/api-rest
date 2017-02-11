@@ -1,6 +1,5 @@
-'use strict'
-
 const mongoose = require('mongoose');
+
 const Schema = mongoose.Schema;
 
 const ProductSchema = Schema({
@@ -9,9 +8,9 @@ const ProductSchema = Schema({
   price: Number,
   category: {
     type: String,
-    enum: ['computers', 'phones', 'accesories']
+    enum: ['computers', 'phones', 'accesories'],
   },
-  description: String
+  description: String,
 });
 
 module.exports = mongoose.model('Product', ProductSchema);
