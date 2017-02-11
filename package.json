@@ -10,15 +10,19 @@
   "author": "Leiver Campeon",
   "license": "MIT",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
     "express": "^4.14.0",
     "mongoose": "^4.6.6"
   },
   "devDependencies": {
     "nodemon": "^1.10.2"
   },
-  "eslintConfig" : {
+  "eslintConfig": {
     "extends": "airbnb",
-    "allow": ["console"]
+    "allow": [
+      "console"
+    ]
   }
 }
